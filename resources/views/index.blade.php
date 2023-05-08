@@ -1,42 +1,26 @@
 @extends('app')
 
 @section('description')
-    <section class="bg-body">
-        <div class="container">
-            <ul class="news-info-list text-center--md">
-                <li>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>ایران</li>
-                <li>
-                    <i class="fa fa-calendar" aria-hidden="true"></i>شنبه، 18 خرداد 1398</li>
-                <li>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>آخرین به‌روزرسانی 11:30 صبح</li>
-                <li>
-                    <i class="fa fa-cloud" aria-hidden="true"></i>℃29 تبریز، ایران</li>
-            </ul>
-        </div>
-    </section>
-    <section class="bg-accent section-space-less2">
+
+    <section class="bg-accent section-space-less2" style="margin-top: 80px">
         <div class="container">
             <div class="row tab-space1">
                 <div class="col-lg-6 col-md-12">
                     <div class="img-overlay-70 img-scale-animate mb-2">
-                        <img src="assets/img/news/news1.jpg" alt="news" class="img-fluid width-100">
+                        <img src="assets/img/gorgij/10.jpg" alt="news" class="img-fluid width-100">
                         <div class="mask-content-lg">
                             <div class="topic-box-sm color-cinnabar mb-20">سیاست</div>
                             <div class="post-date-light">
                                 <ul>
                                     <li>
                                         <span>توسط</span>
-                                        <a href="single-news-1.html">جان اسنو</a>
+                                        <a>مدیریت</a>
                                     </li>
-                                    <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>10 اردیبهشت 1397</li>
+
                                 </ul>
                             </div>
                             <h1 class="title-medium-light">
-                                <a href="single-news-1.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</a>
+                                <a href="/post">واکنش مولوی عبدالحمید به ماجرای گرگیج: تهدید به عزل و محاکمه پس از عذرخواهی بی‌معناست</a>
                             </h1>
                         </div>
                     </div>
@@ -48,10 +32,10 @@
                                 <div class="mask-content-sm">
                                     <div class="topic-box-sm color-azure-radiance mb-10">ورزش</div>
                                     <h2 class="title-medium-light">
-                                        <a href="single-news-2.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و</a>
+                                        <a href="/post">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و</a>
                                     </h2>
                                 </div>
-                                <img src="assets/img/news/news2.jpg" alt="news" class="img-fluid width-100">
+                                <img src="assets/img/gorgij/21.jpg" alt="news" class="img-fluid width-75" >
                             </div>
                         </div>
                         <div class="col-sm-6 col-12">
