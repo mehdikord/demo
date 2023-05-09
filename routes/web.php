@@ -16,7 +16,6 @@ use Jenssegers\Agent\Agent;
 Route::get('/', function () {
     $agent = new Agent();
     $get = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
-    return $get;
 
 
 
