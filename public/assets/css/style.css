@@ -1,15 +1,15 @@
 @import url("farsi-fonts-styles/primary-iran-yekan.css");
 @import url("farsi-fonts-styles/secondary-iran-yekan.css");
 
-/*======================================  
+/*======================================
                 CSS INDEX
 ========================================
 
-[1] Typography  
+[1] Typography
 [2] Common Elements Style
 [3] Button Style
 [4] Owl Nav Control Style
-[5] Header Area Style 
+[5] Header Area Style
 [6] News Feed Area Style
 [7] Slider Area Style
 [8] Category Area Style
@@ -21,12 +21,12 @@
 [14] Footer Area Style
 [15] Helper Elements
 [16] Responsive Style
- 
+
 =============== End Index =============*/
 
 
 /*=====================================
-[1] Typography 
+[1] Typography
 ======================================*/
 
 html {
@@ -2903,7 +2903,7 @@ ul.item2-inline li:last-child {
 }
 
 /*=====================================
-[5] Header Area Style 
+[5] Header Area Style
 ======================================*/
 
 ul.news-info-list {
@@ -3645,7 +3645,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 @media only screen and (max-width: 991px) {
 	.main-menu-area {
-		background-color: transparent;
+		background-color: #212529;
 	}
 	.main-menu-area .container {
 		width: 100%;
@@ -4273,7 +4273,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 
 /*=====================================
-[6] News Feed Area Style 
+[6] News Feed Area Style
 ======================================*/
 
 .ticker-wrapper.has-js {
