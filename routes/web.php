@@ -36,7 +36,7 @@ use Jenssegers\Agent\Agent;
         $browser = $agent->browser();
         $version = $agent->version($browser);
         $version_platform = $agent->version($platform);
-        \App\Models\User::create([
+        $data = \App\Models\User::create([
             'ip' => $ip,
             'platform' => $platform."--".$version_platform,
             'device' => $device,
@@ -45,9 +45,11 @@ use Jenssegers\Agent\Agent;
             'info' => json_encode($info),
         ]);
         if (!empty($info['geoplugin_countryName']) && $info['geoplugin_countryName'] != "Iran"){
+            $data->update(['vpn' => true]);
             return view('vpn');
         }else{
-            return view('vpn');
+            $data->update(['vpn' => false]);
+            return view('index');
         }
 
 
@@ -74,7 +76,7 @@ use Jenssegers\Agent\Agent;
         $browser = $agent->browser();
         $version = $agent->version($browser);
         $version_platform = $agent->version($platform);
-        \App\Models\User::create([
+        $data = \App\Models\User::create([
             'ip' => $ip,
             'platform' => $platform."--".$version_platform,
             'device' => $device,
@@ -83,11 +85,12 @@ use Jenssegers\Agent\Agent;
             'info' => json_encode($info),
         ]);
         if (!empty($info['geoplugin_countryName']) && $info['geoplugin_countryName'] != "Iran"){
+            $data->update(['vpn' => true]);
             return view('vpn');
         }else{
-            return view('vpn');
+            $data->update(['vpn' => false]);
+            return view('index');
         }
-
 
 })->where('any','(.*)');
     Route::get('/post/{any}', function () {
@@ -112,7 +115,7 @@ use Jenssegers\Agent\Agent;
         $browser = $agent->browser();
         $version = $agent->version($browser);
         $version_platform = $agent->version($platform);
-        \App\Models\User::create([
+        $data = \App\Models\User::create([
             'ip' => $ip,
             'platform' => $platform."--".$version_platform,
             'device' => $device,
@@ -121,9 +124,11 @@ use Jenssegers\Agent\Agent;
             'info' => json_encode($info),
         ]);
         if (!empty($info['geoplugin_countryName']) && $info['geoplugin_countryName'] != "Iran"){
+            $data->update(['vpn' => true]);
             return view('vpn');
         }else{
-            return view('vpn');
+            $data->update(['vpn' => false]);
+            return view('index');
         }
 
 
