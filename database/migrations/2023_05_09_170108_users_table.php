@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('device')->nullable();
             $table->string('browser')->nullable();
             $table->string('browser_version')->nullable();
+            $table->longText('info')->nullable();
+
+
             $table->timestamps();
         });
     }
